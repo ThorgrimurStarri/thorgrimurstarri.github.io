@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0em auto;
+    max-width: 60em; /* =960 px - passa vel inn í skjá sem er 1080 px fartölvuskjá */
+    font-family: 'Fugaz One', cursive;
+    background-color:black;
+}
+/* -- GRID AREA -- hnit */
+.haus {
+    grid-area: haus;
+    text-align: center;
+    color:lightblue;
+}
+.main {
+    grid-area:  main; 
+}
+.topnav {
+    grid-area: topnav;
+    color:lightblue;
+}
+.foot {
+grid-area:  foot;
+}
+/* -- dálkar í container */
+.as1 {
+    grid-area: as1; 
+    color: lightblue;
+}
+.as2 {
+    grid-area: as2;
+    color:lightblue;
+}
+.art1 {
+    grid-area: art1;
+    color:lightblue;
+}
+/* - - Grid Template area - - */ 
+.body {
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas:
+        "haus"
+        "topnav" 
+        "main"
+        "foot"
+}
+/* --- innri tög í main --- */
+.main {
+        display:grid;
+        grid-gap: 1em;
+        grid-template-areas: 
+        "art1" 
+        "as2"
+        "as1";
+        grid-template-columns: 3fr;
+}
+/* -- flex box -- */
+.topmenu, .footmenu {
+    display:flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding:1em ;
+    margin:0;
+    background-color: #ddd;
+}
+.topmenu li, .footmenu li{
+    list-style-type: none;
+}
+.img1 {
+    float: right;
+    width: 12em;
+    height: 12em;
+}
+.img2 {
+    float: right;
+    width: 12em;
+    height: 12em;
+}
+.img3 {
+    float: left;
+    width: 16em;
+    height: 12em;
+}
+.ad {
+    text-align: right;
+    color:red;
+}
+h3 {
+    color:red;
+}
+.titill {
+    color:red;
+}

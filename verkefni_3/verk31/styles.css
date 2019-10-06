@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0em auto;
+    max-width: 60em; /* =960 px - passa vel inn í skjá sem er 1080 px fartölvuskjá */
+    font-family: 'News Cycle', sans-serif;
+    background-color: darkgoldenrod
+}
+/* -- GRID AREA -- hnit */
+.haus {
+    grid-area: haus;
+    text-align: center;
+}
+.main {
+    grid-area:  main; 
+}
+.topnav {
+    grid-area: topnav;
+}
+.foot {
+grid-area:  foot;
+}
+/* -- dálkar í container */
+.as1 {
+    grid-area: as1; 
+    border-right: 1px solid black;
+    padding-right: 1em;
+}
+.as2 {
+    grid-area: as2;
+    border-left: 1px solid black;
+    padding-left: 1em;
+}
+.art1 {
+    grid-area: art1;
+}
+/* - - Grid Template area - - */ 
+.body {
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas:
+        "topnav" 
+        "haus"
+        "main"
+        "foot"
+}
+/* --- innri tög í main --- */
+.main {
+        display:grid;
+        grid-gap: 1em;
+        grid-template-areas: 
+            "as1  art1  as2" ;
+        grid-template-columns: 1fr 3fr 1fr;
+}
+/* -- flex box -- */
+.topmenu, .footmenu {
+    display:flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding:1em ;
+    margin:0;
+    background-color: #ddd;
+}
+.topmenu li, .footmenu li{
+    list-style-type: none;
+}

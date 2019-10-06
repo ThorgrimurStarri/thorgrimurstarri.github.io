@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0em auto;
+    max-width: 60em; /* =960 px - passa vel inn í skjá sem er 1080 px fartölvuskjá */
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: darkred;
+}
+/* -- GRID AREA -- hnit */
+.haus {
+    grid-area: haus;
+    text-align: center;
+    background-color:white;
+}
+.main {
+    grid-area:  main; 
+}
+.topnav {
+    grid-area: topnav;
+}
+.foot {
+grid-area:  foot;
+}
+/* -- dálkar í container */
+.as1 {
+    grid-area: as1; 
+}
+.as2 {
+    grid-area: as2;
+}
+.art1 {
+    grid-area: art1;
+}
+.art2 {
+    grid-area: art2;
+}
+/* - - Grid Template area - - */ 
+.body {
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas:
+        "haus"
+        "topnav" 
+        "main"
+        "foot"
+}
+/* --- innri tög í main --- */
+.main {
+        display:grid;
+        grid-gap: 1em;
+        grid-template-areas: 
+            "art1  art1"
+            "as1   as2"
+            "art2  art2" ;
+        grid-template-columns: 2fr 1fr;
+}
+/* -- flex box -- */
+.topmenu, .footmenu {
+    display:flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding:1em ;
+    margin:0;
+    background-color: #ddd;
+}
+.topmenu li, .footmenu li{
+    list-style-type: none;
+}
+h3 {
+    color:white;
+}
+h4 {
+    color:white;
+}
+h5 {
+    color:white;
+}
+.text {
+    color:white;
+}
+.img1 {
+    float: right;
+    width: 6em;
+    height: 4em;
+}
+.img2 {
+    float: left;
+    width: 18em;
+    height: 10em;
+}
