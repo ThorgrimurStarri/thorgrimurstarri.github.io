@@ -2,9 +2,8 @@
 
 body {
     margin: 0; /* tek út sjálgefið 10px margin */
-    font-family: 'Open Sans', sans-serif;
-    font: 400 1em/1.5 'Open Sans', sans-serif; /* samsett skipun: weight/height, size, family */
-    background-color: rgb(12, 12, 131);
+    font-family: 'Salsa', cursive; /* samsett skipun: weight/height, size, family */
+    background-color: navy;
 }
 h1 {
     font-weight: 300;
@@ -24,11 +23,11 @@ blockquote {
     color: #fff;
 } 
 .bgcolor {
-    background-color: bisque;
+    background-color: yellow;
     padding:1em;
 }
 .topnav a, .footnav a {
-    color:bisque;
+    color:#FFF;
     text-decoration: none; 
 }
 .topnav {
@@ -61,8 +60,8 @@ blockquote {
     justify-content: center;
 }
 .innermenu a {
-    color:bisque;
-    background-color:  rgb(12, 12, 131);
+    color:yellow;
+    background-color:  navy;
     padding: .5em 1em ;
     margin-top: 1em;
     text-decoration: none;
@@ -72,8 +71,8 @@ blockquote {
     border:0;
 }
 .innermenu a:hover , .innermenu a:active {
-    color: rgb(12, 12, 131);
-    background-color: bisque;
+    color: navy;
+    background-color: yellow;
 }
 .topnav a:hover, .footnav a:hover {
     text-decoration:underline;
@@ -86,13 +85,13 @@ blockquote {
     border-radius: 100%;
     padding-bottom: 0.2em;   
     padding: 0;
-    border: 2px solid rgb(12, 12, 131);
-    color: rgb(12, 12, 131);
+    border: 2px solid navy;
+    color: navy;
     font-size: 1.5em;
     width: 1.75em;
     text-align: center;
     text-decoration: none;
-    background-color: bisque;
+    background-color: yellow;
 }
     /* grid */
 .col-2 {
@@ -113,4 +112,34 @@ blockquote {
 .copy {
     text-align: center;
     color:#FFF;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.flright {
+    float: right;;
+}
+.mynd1 {
+    height:100px ;
+    width: 75px;
+}
+.mynd2 {
+    width: 300px;
+    height:200px;
+}
+.mtop5em {
+    margin-top: 5em;
+}
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.mynd3 {
+    width: 300px;
+    height: 300px;
+}
+.profmynd {
+    height: 400px;
+    width: 400px;
 }
