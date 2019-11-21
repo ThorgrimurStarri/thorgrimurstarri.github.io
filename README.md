@@ -19,5 +19,8 @@
  * [Verkefni 4.1](verkefni_4/index.html)
  * [Verkefni 4.2](verkefni_4/innerlinks.html)
  
-5 . Verkeni 
+5 . Verkefni 
  * [Verkefni 5/Forsíða](index.html)
+
+6.  Verkefni
+* [Verkefni 6/Æfing](verkefni_6/index.html)
